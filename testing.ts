@@ -12,6 +12,18 @@ export class TestSuite {
       this.errors.push(Error(`Expected "${x}" to equal "${y}"`));
     }
   }
+  
+  assertTrue(x: any) {
+    if (!x) {
+      this.errors.push(Error(`Expected "${x}" to be truthy`));
+    }
+  }
+  
+  assertLambda(f: () => any) {
+    if (!f()) {
+      this.errors.push(Error(`Expected "${f}" to evaluate truthy`));
+    }
+  }
 }
 
 type Passes = Record<string, string[]>;
