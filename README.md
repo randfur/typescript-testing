@@ -1,5 +1,7 @@
 # typescript-testing
 
+Requires [typescript-serviceworker](https://github.com/randfur/typescript-service-worker).
+
 ## Demo
 
 https://fortune-lowly-saw.glitch.me/  
